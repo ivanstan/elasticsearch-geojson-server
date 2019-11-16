@@ -1,4 +1,4 @@
-Project Name
+Elastisearch Tile Server
 ===
 
 Installation
