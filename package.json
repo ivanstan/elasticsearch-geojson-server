@@ -12,7 +12,10 @@
   "author": "Ivan Stanojevic",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "@elastic/elasticsearch": "^7.4.0",
+    "dotenv": "^8.2.0",
+    "geojson-vt": "^3.2.1",
+    "global-mercator": "^3.1.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.7",
