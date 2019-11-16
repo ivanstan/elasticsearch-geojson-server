@@ -1,4 +1,4 @@
-Elastisearch Tile Server
+Elastisearch GeoJSON Server
 ===
 
 Installation
