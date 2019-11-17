@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node --inspect=5858 -r ts-node/register -r dotenv/config src/index.ts",
+    "start": "node --inspect=5858 -r ts-node/register -r dotenv/config --max-old-space-size=8192 src/index.ts",
     "start:watch": "nodemon",
     "build": "tsc",
     "prod": "node -r dotenv/config build/index.js"
@@ -13,11 +13,14 @@
   "license": "ISC",
   "dependencies": {
     "@elastic/elasticsearch": "^7.4.0",
+    "cli-progress": "^3.4.0",
     "dotenv": "^8.2.0",
+    "geojson": "latest",
     "geojson-vt": "^3.2.1",
     "global-mercator": "^3.1.0"
   },
   "devDependencies": {
+    "@types/geojson": "^7946.0.7",
     "@types/node": "^12.12.7",
     "eslint": "^6.6.0",
     "eslint-plugin-import": "^2.18.2",
